@@ -1,22 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>POKEMON SEARCH</title>
+    <title>POKE SEARCH</title>
+    <link rel="stylesheet" type="text/css" href="../static/home.css">
 </head>
-<body><center>
+<body style="background-color: lightblue"; font-family: impact> 
+    <center>
         <h1>
-            POKEMON
-            </h1>
-            <form action="http://localhost:5000/hasil" method="post">
-            <p>
-                <input name="nama" type="text" placeholder="Ketik Nama Pokemon..."></p>
-            <p>
-                <input type="submit" value="Cari">
+            <img src="https://cdn.pixabay.com/photo/2016/08/06/07/59/pokemon-go-1574001_1280.png" alt="Pokemon" width="300" height="300">
+            <hr>
+            <P><b>POKEMON DATABASE</b></P>
+            <hr>
+        </h1>
+            <form action="http://localhost:5000/hasil" method="POST">
+            <p>        
+                <input name= "nama" type="text" placeholder="Search Pokemon..." required>
             </p>
-            </form>
-</center></body>
+            <p>    
+                <input type="submit" value="Search">
+            </p>
+            </form>      
+        
+    </center>
+</body>
 </html>
